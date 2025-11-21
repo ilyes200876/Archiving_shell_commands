@@ -26,4 +26,4 @@ mkdir -p "$TMP_DIR" && while read -r url; do echo -e "Downloading '\033[4;34m$ur
 #ach HTTP response headers (for each downloaded file) is stored in the temporary directory
 mkdir -p "$TMP_DIR" && while read -r url; do echo -e "Downloading '\033[4;34m$url\033[0m'…"; curl -L -f --insecure -o "$TMP_DIR/$(basename "$url")" "$url"; echo -e "\033[0;32mDone\033[0m"; done < urls.txt
 
-
+echo "bye!"
